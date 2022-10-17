@@ -1,3 +1,3 @@
 from aiogram import Bot
-print('Делай бота')
+print('Делай бота быстрее')
 
