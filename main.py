@@ -5,12 +5,13 @@ from aiogram.dispatcher.handler import CancelHandler
 from expences import fetch_today_exp, fetch_month_exp, fetch_last_exp, fetch_today_summ, fetch_month_summ
 from db import insert, delete
 from categories import show_categ_list
+from config import api_token, access_id
 
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = os.getenv('TELEGRAM_API_TOKEN')
-ACCESS_ID = int(os.getenv('TELEGRAM_ACCESS_ID'))
+API_TOKEN = api_token
+ACCESS_ID = int(access_id)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
